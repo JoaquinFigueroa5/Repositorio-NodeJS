@@ -21,7 +21,7 @@ router.post(
     [
         check('nombre', 'El nombre es obligatorio').not().isEmpty(),
         check('password', 'El password debe ser mayor a 6 caracteres').isLength({min: 6}),
-        check('correo', 'Este no es un correo valido').isEmail,
+        check('correo', 'Este no es un correo valido').isEmail(),
         check('correo').custom(existenteEmail),
         check('role').custom(esRolValido),
         check('phone', 'EL telefono debe tener 8 numeros').isLength({min: 8, max: 8}),

@@ -2,7 +2,7 @@ import bcryptjs from 'bcryptjs';
 import Usuario from '../users/user.model.js';
 import { generarJWT } from '../helpers/generate-JWT.js';
 
-export const login = async() => {
+export const login = async(req, res) => {
     const { correo, password } = req.body;
 
     try {
