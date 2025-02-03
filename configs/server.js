@@ -40,8 +40,6 @@ export const initServer = async() => {
         middlewares(app);
         conectarDB();
         routes(app);
-        app.listen(port);
-        console.log(`Server runnning on port ${port}`)
     } catch (err) {
         console.log(`Server init failed: ${err}`)
     }
