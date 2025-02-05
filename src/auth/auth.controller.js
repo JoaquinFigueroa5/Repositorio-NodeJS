@@ -19,13 +19,13 @@ export const login = async(req, res) => {
             });
         }
 
-        if (!user.estado) {
+        if (!user.state) {
             return res.status(400).json({
                 msg: 'El usuario no existe en la base de datos'
             })
         }
 
-        const validPassword = await verify(password, user.password);
+        const validPassword = await verify(user.password, password);
         if(!validPassword){
             return res.status(400).json({
                 msg: 'La contraseña es incorrecta, bobo'

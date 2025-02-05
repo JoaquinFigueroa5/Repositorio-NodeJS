@@ -6,8 +6,9 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import { dbConnection } from './mongo.js';
 import limiter from '../src/middlewares/validar-cant-peticiones.js';
-import authRoutes from '../src/auth/auth.routes.js'
-import userRoutes from '../src/users/user.routes.js'
+import authRoutes from '../src/auth/auth.routes.js';
+import userRoutes from '../src/users/user.routes.js';
+import petRoutes from '../src/pet/pet.routes.js';
 
 const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false}));
@@ -22,6 +23,7 @@ const routes = (app) => {
 
     app.use('/adoptionSystem/v1/auth', authRoutes)
     app.use('/adoptionSystem/v1/users', userRoutes)
+    app.use('/adoptionSystem/v1/pets', petRoutes)
 }
 
 const conectarDB = async() => {
