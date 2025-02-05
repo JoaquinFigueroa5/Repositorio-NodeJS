@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "67a3b7df23ecc32357e7c943"
+  },
+  "name": "Joaquin",
+  "surname": "Figueroa",
+  "username": "Joaki",
+  "email": "hfigueroa-2023417@kinal.edu.gt",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$pXGo6WrQi9Eg/iQ4I1sWQQ$nAUSQsnCEghhrscEaZEJNL467nkz2oBpSiwdM+zSb5o",
+  "profilePicture": null,
+  "phone": "58694127",
+  "role": "ADMIN_ROLE",
+  "state": false,
+  "createdAt": {
+    "$date": "2025-02-05T19:11:27.388Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-05T22:36:37.204Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3b80623ecc32357e7c947"
+  },
+  "name": "Alejandra",
+  "surname": "Ojeda de Figueroa",
+  "username": "Waexoi",
+  "email": "aojeda@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$h4HJtIqUpoKcRDW35gtxsQ$Fw8wd8CjL0JlC8v+CU7UPWb5PDapZxRskcO9cQ/GRw4",
+  "profilePicture": null,
+  "phone": "85174286",
+  "role": "ADMIN_ROLE",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-05T19:12:06.729Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-05T19:12:06.729Z"
+  }
+}]
