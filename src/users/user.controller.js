@@ -59,7 +59,7 @@ export const getUserById = async (req, res) => {
 export const updateUser = async (req, res = response) => {
     try{
         const { id } = req.params;
-        const { _id, password, email, ...data} = req.body;
+        const { _id, email, ...data} = req.body;
 
         if(password){
             data.password = await hash(password);
@@ -76,7 +76,7 @@ export const updateUser = async (req, res = response) => {
     }catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error al actualizar user',
+            msg: 'Error al actualizar el user',
             error
         })
     }
@@ -102,6 +102,32 @@ export const deleteUser = async (req, res) =>{
         res.status(500).json({
             success: false,
             msg: 'Error al desactivar usuario',
+            error
+        })
+    }
+}
+
+export const updatePassword = async (req, res = response) => {
+    try{
+        const { id } = req.params;
+        const { _id, password, ...data} = req.body;
+
+        if(password){
+            data.password = await hash(password);
+        }
+            
+        const user = await User.findByIdAndUpdate(id, data, {new: true});
+
+        res.status(200).json({
+            sucess: true,
+            msg: 'Contraseña del usuario actualizada',
+            user
+        })
+
+    }catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error al actualizar la contraseña del user',
             error
         })
     }

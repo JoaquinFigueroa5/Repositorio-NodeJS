@@ -1,0 +1,33 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Auth",
+    "collectionId": "956db02a-90d3-48d2-b52e-02469bbe6d50",
+    "dateExported": "2025-02-10T22:47:54.431Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9d66f38b-ad33-43c5-91d3-52882499b510",
+            "colId": "956db02a-90d3-48d2-b52e-02469bbe6d50",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3002/adoptionSystem/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-10T20:55:11.584Z",
+            "modified": "2025-02-10T21:59:27.354Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhNjczOTc3MDlhNGJmOWVkYzU3ZWUiLCJpYXQiOjE3MzkyMjA5NzMsImV4cCI6MTczOTIyNDU3M30.qqbHHtmKzS0br1ql0mu278lacWFu34LZHLW1wWKXyQ4"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"hfigueroa-2023417@gmail.com\",\n  \"password\": \"Joaquin2007\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "fAxvfS4GLetmCVZjnQQumV67sAtnM4E_B5hcdCCwo0R2Xd1tc0INXm4ac-Mi0WVJ7hYHQNAz1g5NAoLjYUUvLQ"
+}

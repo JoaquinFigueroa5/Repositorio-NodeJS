@@ -32,4 +32,4 @@ const PetSchema = Schema({
     versionkey: false
 });
 
-export default model('pet', PetSchema);
+export default model('Pet', PetSchema);

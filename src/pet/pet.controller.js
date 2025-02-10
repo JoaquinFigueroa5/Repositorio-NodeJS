@@ -118,3 +118,29 @@ export const deletePet = async (req, res) => {
         })
     }
 }
+
+export const updatePet = async (req, res) => {
+    try{
+        const { id } = req.params;
+        const { _id, password, email, ...data} = req.body;
+
+        if(password){
+            data.password = await hash(password);
+        }
+            
+        const user = await Pet.findByIdAndUpdate(id, data, {new: true});
+
+        res.status(200).json({
+            sucess: true,
+            msg: 'Mascota actualizado',
+            user
+        })
+
+    }catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error al actualizar la mascota',
+            error
+        })
+    }
+}

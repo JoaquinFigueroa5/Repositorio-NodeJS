@@ -1,0 +1,28 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Usuarios",
+    "collectionId": "c329d122-fd57-476f-8749-6e3a3dc9323c",
+    "dateExported": "2025-02-10T22:48:16.063Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2988d49e-a7f3-4947-a246-e58f3820def0",
+            "colId": "c329d122-fd57-476f-8749-6e3a3dc9323c",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:3002/adoptionSystem/v1/users/67aa67397709a4bf9edc57e0",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2025-02-10T21:57:45.300Z",
+            "modified": "2025-02-10T22:29:09.789Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "POlEUJtg2J5AOKrTYcofIrQGuk74U70S6YYfbs0gNl7NfPnDBWFXMo9DXp6CqTsU1Hbd1_b4eaKftOuECZgkrw"
+}
