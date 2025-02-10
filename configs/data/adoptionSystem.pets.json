@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "67aa772b7709a4bf9edc57fb"
+  },
+  "name": "Chop",
+  "description": "Perro color cafe chocolate",
+  "age": 5,
+  "type": "PERRO",
+  "keeper": {
+    "$oid": "67aa67397709a4bf9edc57ee"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-10T22:01:15.858Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-10T22:21:32.527Z"
+  },
+  "__v": 0
+}]

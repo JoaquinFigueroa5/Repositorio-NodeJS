@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "67aa67397709a4bf9edc57ee"
+  },
+  "name": "Joaquin",
+  "surname": "Figueroa",
+  "username": "Joaki",
+  "email": "hfigueroa-2023417@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$wg+4vwsl9FLXA3HVLA4O4Q$oeJGWTXvM4jB2+i4MeQ1anHSFdRg6Zop+HQM8IXTt8c",
+  "profilePicture": null,
+  "phone": "58694127",
+  "role": "ADMIN_ROLE",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-10T20:53:13.113Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-10T23:15:18.898Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67aa67757709a4bf9edc57f2"
+  },
+  "name": "Alejandra",
+  "surname": "Ojeda",
+  "username": "waexoi",
+  "email": "ojeda-2023417@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$ynIPY+3WlukNVrXqfIIj1g$gbr2gR2m1Foa2619OUivAtyzcdpNffAyiTpdnhan1KU",
+  "profilePicture": null,
+  "phone": "11223344",
+  "role": "ADMIN_ROLE",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-10T20:54:13.864Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-10T20:54:13.864Z"
+  }
+}]
