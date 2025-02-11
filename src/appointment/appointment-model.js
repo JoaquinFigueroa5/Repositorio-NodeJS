@@ -1,24 +1,28 @@
 import { Schema, model } from "mongoose";
 
-const PetSchema = Schema({
-    name: {
+const AppoitSchema = Schema({
+    title: {
         type: String,
         required: true
+    },
+    date: {
+        type: String,
+        required: true
+    },
+    hour:{
+        type: String,
+        default: () => new Date().toLocaleTimeString("es-ES", { hour12: false})
     },
     description: {
         type: String,
         required: true
     },
-    age: {
-        type: Number,
+    pet: {
+        type: Schema.Types.ObjectId,
+        ref: 'pet',
         required: true
     },
-    type: {
-        type: String,
-        uppercase: true,
-        required: true
-    },
-    keeper: {
+    owner: {
         type: Schema.Types.ObjectId,
         ref: 'user',
         required: true
@@ -29,7 +33,8 @@ const PetSchema = Schema({
     }
 }, {
     timestamps: true,
-    versionkey: false
+    versionKey: false
 });
 
-export default model('Pet', PetSchema);
+
+export default model('Appoit', AppoitSchema);
