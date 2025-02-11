@@ -1,0 +1,120 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Auth and Appointment",
+    "collectionId": "38aff66c-0347-4b69-bdcf-b2257d08782f",
+    "dateExported": "2025-02-11T14:12:10.133Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4af189e1-9301-4720-9676-ca0b9a07ecb7",
+            "colId": "38aff66c-0347-4b69-bdcf-b2257d08782f",
+            "containerId": "",
+            "name": "Register-Appointment",
+            "url": "http://localhost:3002/adoptionSystem/v1/appointments/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-02-11T04:19:50.417Z",
+            "modified": "2025-02-11T13:56:51.670Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhNjczOTc3MDlhNGJmOWVkYzU3ZWUiLCJpYXQiOjE3MzkyNzg5MzksImV4cCI6MTczOTI4MjUzOX0.j4HZM_mc0fhu49AC2G5Vr4JZOeZvJDSYmicnCtoNtIw"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Grooming\",\n  \"date\": \"25/03/2025\",\n  \"description\": \"Corte de pelo y de uñas\",\n  \"name\": \"Chop\",\n  \"email\": \"hfigueroa-2023417@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3cdde785-404d-48fb-b564-77b09a467b58",
+            "colId": "38aff66c-0347-4b69-bdcf-b2257d08782f",
+            "containerId": "",
+            "name": "Login-Auth",
+            "url": "http://localhost:3002/adoptionSystem/v1/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-11T04:57:55.678Z",
+            "modified": "2025-02-11T04:59:08.464Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"hfigueroa-2023417@gmail.com\",\n  \"password\": \"Joaquin2020\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f3a2b10b-c372-49a6-b259-8820e8083cdd",
+            "colId": "38aff66c-0347-4b69-bdcf-b2257d08782f",
+            "containerId": "",
+            "name": "Get-Appointment",
+            "url": "http://localhost:3002/adoptionSystem/v1/appointments/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-02-11T13:58:11.459Z",
+            "modified": "2025-02-11T13:59:37.039Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhNjczOTc3MDlhNGJmOWVkYzU3ZWUiLCJpYXQiOjE3MzkyODIzNDYsImV4cCI6MTczOTI4NTk0Nn0.dpMRX1OqWiLb-QxYoZ2QwYDiXIKfKjlCHyQffsWm038"
+                }
+            ]
+        },
+        {
+            "_id": "314fc258-233c-4831-9505-dc14777e29c5",
+            "colId": "38aff66c-0347-4b69-bdcf-b2257d08782f",
+            "containerId": "",
+            "name": "Search-Appointment",
+            "url": "http://localhost:3002/adoptionSystem/v1/appointments/67ab4be4ed81ce16167aacd5",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-02-11T13:58:35.016Z",
+            "modified": "2025-02-11T13:59:50.355Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhNjczOTc3MDlhNGJmOWVkYzU3ZWUiLCJpYXQiOjE3MzkyODIzNDYsImV4cCI6MTczOTI4NTk0Nn0.dpMRX1OqWiLb-QxYoZ2QwYDiXIKfKjlCHyQffsWm038"
+                }
+            ]
+        },
+        {
+            "_id": "92aeeeeb-173c-4440-9ea2-303e4acc1eec",
+            "colId": "38aff66c-0347-4b69-bdcf-b2257d08782f",
+            "containerId": "",
+            "name": "Update-Appointment",
+            "url": "",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-02-11T14:00:06.057Z",
+            "modified": "2025-02-11T14:00:06.057Z",
+            "headers": []
+        },
+        {
+            "_id": "9cce0336-11cc-4f19-8678-d37989175978",
+            "colId": "38aff66c-0347-4b69-bdcf-b2257d08782f",
+            "containerId": "",
+            "name": "Delete-Appointment",
+            "url": "",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2025-02-11T14:00:58.788Z",
+            "modified": "2025-02-11T14:00:58.788Z",
+            "headers": []
+        },
+        {
+            "_id": "1375eaf7-35fe-4a4d-a5d1-d0b008f44795",
+            "colId": "38aff66c-0347-4b69-bdcf-b2257d08782f",
+            "containerId": "",
+            "name": "Register-Auth",
+            "url": "",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2025-02-11T14:03:54.726Z",
+            "modified": "2025-02-11T14:03:54.726Z",
+            "headers": []
+        }
+    ],
+    "ref": "2I9O42MrwW_sdYvymfoM7bIlReYd-AFM5-H-x_BcxTjx3SIwmYgK-bBIHtHskWfq6sXm1p9_8AyKN5SgHKn8TA"
+}

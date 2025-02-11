@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "67ab4be4ed81ce16167aacd5"
+  },
+  "title": "Grooming",
+  "date": "25/03/2025",
+  "description": "Corte de pelo y de uñas",
+  "pet": {
+    "$oid": "67aa772b7709a4bf9edc57fb"
+  },
+  "owner": {
+    "$oid": "67aa67397709a4bf9edc57ee"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-11T13:08:52.509Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-11T13:56:40.399Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ab50de5ca47d6f67e80f85"
+  },
+  "title": "Vacunas",
+  "date": "14/02/2025",
+  "description": "Vacunas primordiales",
+  "pet": {
+    "$oid": "67aa772b7709a4bf9edc57fb"
+  },
+  "owner": {
+    "$oid": "67aa67397709a4bf9edc57ee"
+  },
+  "status": true,
+  "hour": "7:30:06",
+  "createdAt": {
+    "$date": "2025-02-11T13:30:06.645Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-11T13:30:06.645Z"
+  }
+}]

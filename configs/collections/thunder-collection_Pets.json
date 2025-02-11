@@ -1,0 +1,71 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Pets",
+    "collectionId": "0c5c247c-33bb-4363-b3e9-56909f6a57a5",
+    "dateExported": "2025-02-11T14:12:25.271Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "69bb44bd-0565-4c3d-bf47-471c8e629189",
+            "colId": "0c5c247c-33bb-4363-b3e9-56909f6a57a5",
+            "containerId": "",
+            "name": "Register",
+            "url": "",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-02-11T14:06:37.472Z",
+            "modified": "2025-02-11T14:06:37.472Z",
+            "headers": []
+        },
+        {
+            "_id": "2ced66a2-8e95-44ce-aed8-9329e06a219d",
+            "colId": "0c5c247c-33bb-4363-b3e9-56909f6a57a5",
+            "containerId": "",
+            "name": "Get",
+            "url": "",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-11T14:06:41.378Z",
+            "modified": "2025-02-11T14:06:41.378Z",
+            "headers": []
+        },
+        {
+            "_id": "1b2cd1ee-864f-4744-a5d3-e944a4f7e62f",
+            "colId": "0c5c247c-33bb-4363-b3e9-56909f6a57a5",
+            "containerId": "",
+            "name": "Update",
+            "url": "",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-02-11T14:06:45.403Z",
+            "modified": "2025-02-11T14:06:45.403Z",
+            "headers": []
+        },
+        {
+            "_id": "87642323-b012-4501-accb-68fdbef4cc15",
+            "colId": "0c5c247c-33bb-4363-b3e9-56909f6a57a5",
+            "containerId": "",
+            "name": "Delete",
+            "url": "",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-02-11T14:06:49.489Z",
+            "modified": "2025-02-11T14:06:49.489Z",
+            "headers": []
+        },
+        {
+            "_id": "499dabea-e707-4cc1-b5f2-a7f503074a4d",
+            "colId": "0c5c247c-33bb-4363-b3e9-56909f6a57a5",
+            "containerId": "",
+            "name": "Search",
+            "url": "http://localhost:3002/adoptionSystem/v1/pets/67aa772b7709a4bf9edc57fb",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-02-11T14:06:55.390Z",
+            "modified": "2025-02-11T14:09:41.991Z",
+            "headers": []
+        }
+    ],
+    "ref": "3JI5nZKeAgBoT_VeN4aJtQyKohZt_sLL-k2ohbTFeayJM-TdNZGsTe1gdAfc8XpqBvSbQdkmfhpz9eV7QkrDew"
+}
