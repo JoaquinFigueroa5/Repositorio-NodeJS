@@ -43,7 +43,7 @@ export const getPets = async(req, res) =>{
             .skip(Number(desde))
             .limit(Number(limit));
 
-        const petWithOwnerNames = await Promise.all(pets.map(async (pet) =>{
+        const petWithOwnerNames = await Promise.all(pets.map(async(pet) =>{
             const owner = await User.findById(pet.keeper);
             return{
                 ...pet.toObject(),

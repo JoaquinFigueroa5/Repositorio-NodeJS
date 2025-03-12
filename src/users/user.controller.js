@@ -1,5 +1,5 @@
 import { response, request } from "express";
-import { hash } from "argon2";
+import argon2 from "argon2";
 import User from "./user.model.js";
 
 export const getUsers = async (req = request, res = response) => {
@@ -107,16 +107,14 @@ export const deleteUser = async (req, res) =>{
     }
 }
 
-export const updatePassword = async (req, res = response) => {
+export const updatePassword = async (req, res) => {
     try{
         const { id } = req.params;
-        const { _id, password, ...data} = req.body;
-
-        if(password){
-            data.password = await hash(password);
-        }
-            
-        const user = await User.findByIdAndUpdate(id, data, {new: true});
+        const { password } = req.body;
+        
+        const hashedPassword = await argon2.hash(password);
+                    
+        const user = await User.findByIdAndUpdate(id, {password: hashedPassword}, {new: true});
 
         res.status(200).json({
             sucess: true,

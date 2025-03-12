@@ -4,10 +4,11 @@ import Appoit from "./appointment-model.js"
 
 export const saveAppoit = async (req, res) => {
     try{
-        console.log("Hola")
         const data = req.body;
+        const { title, description, date } = req.body;
         const user = await User.findOne({ email: data.email});
         const pet = await Pet.findOne({ name: data.name});
+        const validDate = date && !isNaN(Date.parse(date)) ? new Date(date) : new Date();
 
         if(!user || !pet){
             return res.status(404).json({
@@ -17,7 +18,9 @@ export const saveAppoit = async (req, res) => {
         }
 
         const appoit = new Appoit({
-            ...data,
+            title,
+            description,
+            date: validDate,
             owner: user._id, 
             pet: pet._id
             
@@ -25,17 +28,20 @@ export const saveAppoit = async (req, res) => {
 
         await appoit.save();
 
+        const appoits = await Appoit.findOne()
+            .populate('pet', 'name -_id')
+            .populate('owner', 'name -_id')
+
         res.status(200).json({
             success: true,
-            appoit
+            appoit: appoits
         })
 
     } catch(error){
-        console.log("hola")
         res.status(500).json({
             success: false,
             msg: "Error to save the appointment",
-            error
+            error: error.message || error
         })
     }
 }

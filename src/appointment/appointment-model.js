@@ -6,7 +6,7 @@ const AppoitSchema = Schema({
         required: true
     },
     date: {
-        type: String,
+        type: Date,
         required: true
     },
     hour:{
@@ -19,12 +19,12 @@ const AppoitSchema = Schema({
     },
     pet: {
         type: Schema.Types.ObjectId,
-        ref: 'pet',
+        ref: 'Pet',
         required: true
     },
     owner: {
         type: Schema.Types.ObjectId,
-        ref: 'user',
+        ref: 'User',
         required: true
     },
     status: {
